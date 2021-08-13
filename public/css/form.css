@@ -1,0 +1,96 @@
+@keyframes arm {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes arm2 {
+  from {
+    transform: translateX(-15px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes head {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-2deg);
+  }
+}
+
+@keyframes shoulder {
+  from {
+    transform: translate(-28px, -92.5px);
+  }
+  to {
+    transform: translate(-23px, -92.5px);
+  }
+}
+
+@keyframes head {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1.5deg);
+  }
+}
+
+@keyframes tablet {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+#barber-image {
+  width: 500px;
+  height: 800px;
+}
+
+#left-arm {
+  animation: arm 3s ease-in infinite;
+  animation: arm2 3s ease-in infinite;
+}
+
+#left-shoulder {
+  animation: shoulder 3s ease-in infinite;
+}
+
+#right-arm {
+  animation: arm 5s ease infinite;
+  animation: arm2 5s ease infinite;
+}
+
+#client-head {
+  transform-origin: center;
+  transform-box: fill;
+  animation: head 2s ease-in infinite;
+}
+
+#cloud {
+  fill: rgb(170, 166, 166);
+  stroke: blue;
+}
+
+#tablet {
+  transform-origin: center;
+  transform-box: fill;
+  animation: tablet 5s ease-in infinite;
+}
+
+#path1026 {
+  fill: black;
+}
