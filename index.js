@@ -19,8 +19,8 @@ app.listen(3000, () => {
 
 app.get('/', async (req, res) => {
 
-    // const a1 = new AppointmentSchema({ name: 'richard' })
-    // await a1.save()
+    const a1 = new AppointmentSchema({ name: 'richard' })
+    await a1.save()
     res.render('index', { layout: false })
 })
 
